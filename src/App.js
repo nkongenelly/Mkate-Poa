@@ -9,28 +9,15 @@ import Menus from "./components/menus";
 import Contacts from "./components/contacts";
 
 class App extends Component {
-  handleCount = menu => {
-    console.log(menu);
-    // if (menu == this.props.cake) {
-    // }
-    var counters = [...this.state.counters];
-    var index = 0;
-    var toPush = {
-      id: menu.id,
-      menuName: menu.menuName,
-      menuPrice: menu.menuPrice,
-      value: 1
-    };
-  };
   render() {
     return (
-      <div className="container">
+      <div>
         <Navbar />
         <Slideshows />
-        <Abouts />
         <Menus
         // onAddCart={this.state.handleCount}
         />
+        <Abouts />
         <Contacts />
         {/* <Router>
           <Switch history={browserHistory}>

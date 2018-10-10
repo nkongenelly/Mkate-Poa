@@ -39,12 +39,6 @@ class Breads extends Component {
             </h1>
             <p className="w3-text-grey">{bread.description}</p>
             <hr />
-            <button
-              onClick={() => this.props.onAddCart(this.props.product)}
-              className="btn btn-primary m-2"
-            >
-              Add to Cart
-            </button>
           </div>
         ))}
       </React.Fragment>

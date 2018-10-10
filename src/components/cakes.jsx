@@ -23,19 +23,7 @@ class Cakes extends Component {
       }
     ]
   };
-  onAddCart = menu => {
-    console.log(menu);
-    // if (menu == this.props.cake) {
-    // }
-    var counters = [...this.state.counters];
-    var index = 0;
-    var toPush = {
-      id: menu.id,
-      menuName: menu.menuName,
-      menuPrice: menu.menuPrice,
-      value: 1
-    };
-  };
+
   render() {
     return (
       <React.Fragment>
@@ -52,12 +40,6 @@ class Cakes extends Component {
                 {cake.price}
               </span>
             </h1>
-            <button
-              // onClick={() => this.state.onAddCart(cake)}
-              className="btn btn-primary m-2"
-            >
-              Add to Cart
-            </button>
             <p className="w3-text-grey">{cake.description}</p>
             <hr />
           </div>

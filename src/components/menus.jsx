@@ -15,6 +15,7 @@ class Menus extends Component {
         <div
           className="w3-container w3-black w3-padding-64 w3-xxlarge"
           id="menu"
+          style={{ padding: 230 }}
         >
           <div className="w3-content">
             <h1

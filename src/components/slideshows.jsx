@@ -42,23 +42,61 @@ class Slideshows extends Component {
         <Zoom {...this.state.zoomproperties}>
           {this.state.slideImages.map((slideImage, index) => (
             <div className="each-slide">
-              {/* <div> */}
-              {/* /* // key=
-                {index}
-                // style=
-                {{ backgroundImage: `url(${slideImage})` }} */}
-              <img
-                style={this.state.stylying}
+              <div
+                key={index}
+                style={{
+                  backgroundImage: `url(${slideImage})`,
+                  backgroundSize: "cover",
+                  height: "500px",
+                  width: "1400px"
+                }}
+              >
+                {/* <img
+                style={{
+                  backgroundRepeat: no - repeat,
+                  backgroundSize: cover,
+                  minHeight: "90%"
+                }}
+                // style={this.state.stylying}
                 key={index}
                 src={slideImage}
                 alt=""
-              />
-
-              <span>Slide {index}</span>
-              {/* </div> */}
+              /> */}
+                <span>Slide {index}</span>
+              </div>
             </div>
           ))}
         </Zoom>
+        <div className="bgimg w3-display-container w3-grayscale-min" id="home">
+          <div className="w3-display-bottomleft w3-padding">
+            <span className="w3-tag w3-xlarge">Open from 10am to 10pm</span>
+          </div>
+          <div className="w3-display-middle w3-center">
+            {/* <span
+              className="w3-text-white w3-hide-small"
+              style={{ fontSize: 40 }}
+            >
+              MKATE POA
+              <br />
+              Absolutely the best!!
+            </span> */}
+            {/* <span
+              className="w3-text-white w3-hide-large w3-hide-medium"
+              style={{ fontSize: 30 }}
+            >
+              <b>
+                thin
+                <br />
+                CRUST PIZZA
+              </b>
+            </span> */}
+            <p>
+              <a href="#menu" className="w3-button w3-xxlarge w3-black">
+                Let me see the menu
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     );
   }
