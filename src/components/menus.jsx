@@ -9,11 +9,11 @@ import Pastries from "./pastries";
 class Menus extends Component {
   state = {
     showmenus: [
-      { image: "images/cake1.jpg", name: "Cakes", link: "/cakes" },
-      { image: "images/bread.jpg", name: "Bread", link: "/bread" },
-      { image: "images/cookies1.jpg", name: "Cookies", link: "/cookies" },
-      { image: "images/cupcake1.jpg", name: "Pies", link: "/pies" },
-      { image: "images/baguettes1.jpg", name: "Pastries", link: "/pastries" }
+      { image: "images/clip2.png", name: "Cakes", link: "/cakes" },
+      { image: "images/clip3.png", name: "Bread", link: "/bread" },
+      { image: "images/clip4.png", name: "Cookies", link: "/cookies" },
+      { image: "images/clip5.png", name: "Pies", link: "/pies" },
+      { image: "images/clip6.png", name: "Pastries", link: "/pastries" }
     ]
   };
 
@@ -22,9 +22,9 @@ class Menus extends Component {
       <Router>
         <React.Fragment>
           <div
-            className="w3-container w3-black w3-padding-64 w3-xxlarge"
+            className="w3-container w3-red w3-grayscale w3-padding-64 w3-xxlarge"
             id="menu"
-            style={{ padding: 30 }}
+            style={{ padding: 230 }}
           >
             <div className="w3-content">
               <h1
@@ -34,7 +34,7 @@ class Menus extends Component {
                 MKATE POA MENU
               </h1>
 
-              <div className="w3-row w3-center w3-border w3-border-dark-grey">
+              <div className="w3-row w3-center w3-border">
                 <a
                   href="javascript:void(0)"
                   // onClick={() => this.openMenu("Pizza")}
@@ -44,38 +44,15 @@ class Menus extends Component {
                     <Link to={showmenu.link}>
                       <div className="w3-col s2 tablink w3-padding-large w3-hover-red">
                         {showmenu.name}
+                        <img
+                          src={showmenu.image}
+                          className="img-fluid"
+                          alt=""
+                        />
                       </div>
                     </Link>
                   ))}
                 </a>
-                {/* <a href="#">
-                  <Link to="/bread">
-                    <div className="w3-col s2 tablink w3-padding-large w3-hover-red">
-                      Bread
-                    </div>
-                  </Link>
-                </a>
-                <a>
-                  <Link to="/cookies">
-                    <div className="w3-col s2 tablink w3-padding-large w3-hover-red">
-                      Cookies
-                    </div>
-                  </Link>
-                </a>
-                <a>
-                  <Link to="/pies">
-                    <div className="w3-col s2 tablink w3-padding-large w3-hover-red">
-                      Pies
-                    </div>
-                  </Link>
-                </a>
-                <a>
-                  <Link to="/pastries">
-                    <div className="w3-col s2 tablink w3-padding-large w3-hover-red">
-                      Pastries
-                    </div>
-                  </Link>
-                </a> */}
               </div>
             </div>
             <Route path="/cakes" component={Cakes} />

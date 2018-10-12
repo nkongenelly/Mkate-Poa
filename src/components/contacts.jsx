@@ -4,9 +4,12 @@ class Contacts extends Component {
   state = {};
   render() {
     return (
-      <div className="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+      <div
+        className="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge"
+        id="contact"
+      >
         <div className="w3-content">
-          <h1 className="w3-center w3-jumbo" style={{marginBottom:"64px"}}>
+          <h1 className="w3-center w3-jumbo" style={{ marginBottom: "64px" }}>
             Contact
           </h1>
           <p>

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import About from "./abouts";
 import { Zoom } from "react-slideshow-image";
 // import slideImage from "images/screen1.jpg";
 
@@ -7,11 +8,11 @@ import { Zoom } from "react-slideshow-image";
 class Slideshows extends Component {
   state = {
     slideImages: [
-      "images/screen1.jpg",
-      "images/screen2.jpg",
-      "images/screen3.jpg",
-      "images/screen4.jpg",
-      "images/screen5.jpg"
+      "images/screen6.jpg",
+      "images/screen7.jpg",
+      "images/screen8.jpg",
+      "images/screen9.jpg",
+      "images/screen10.jpg"
     ],
 
     zoomproperties: {
@@ -47,56 +48,43 @@ class Slideshows extends Component {
                 style={{
                   backgroundImage: `url(${slideImage})`,
                   backgroundSize: "cover",
-                  height: "500px",
-                  width: "1400px"
+                  height: "800px",
+                  width: "1400px",
+                  alignItems: "bottom"
                 }}
               >
-                {/* <img
-                style={{
-                  backgroundRepeat: no - repeat,
-                  backgroundSize: cover,
-                  minHeight: "90%"
-                }}
-                // style={this.state.stylying}
-                key={index}
-                src={slideImage}
-                alt=""
-              /> */}
                 <span>Slide {index}</span>
+
+                <div
+                  className="bgimg w3-display-container w3-grayscale-min"
+                  id="home"
+                >
+                  <div className="w3-display-bottomleft w3-padding">
+                    <span className="w3-tag w3-xlarge">
+                      Open from 10am to 12pm
+                    </span>
+                  </div>
+                  <div className="w3-display-middle w3-center">
+                    <span
+                      className="w3-text-white w3-hide-large w3-hide-medium"
+                      style={{ fontSize: "60px" }}
+                    >
+                      <b />
+                      <br />
+                      Mkate Poa
+                      <b />
+                    </span>
+                    <p>
+                      <a href="#menu" className="w3-button w3-xxlarge w3-black">
+                        Let me see the menu
+                      </a>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
         </Zoom>
-        <div className="bgimg w3-display-container w3-grayscale-min" id="home">
-          <div className="w3-display-bottomleft w3-padding">
-            <span className="w3-tag w3-xlarge">Open from 10am to 10pm</span>
-          </div>
-          <div className="w3-display-middle w3-center">
-            {/* <span
-              className="w3-text-white w3-hide-small"
-              style={{ fontSize: 40 }}
-            >
-              MKATE POA
-              <br />
-              Absolutely the best!!
-            </span> */}
-            {/* <span
-              className="w3-text-white w3-hide-large w3-hide-medium"
-              style={{ fontSize: 30 }}
-            >
-              <b>
-                thin
-                <br />
-                CRUST PIZZA
-              </b>
-            </span> */}
-            <p>
-              <a href="#menu" className="w3-button w3-xxlarge w3-black">
-                Let me see the menu
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
     );
   }

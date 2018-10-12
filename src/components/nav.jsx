@@ -15,22 +15,22 @@ class Navbar extends Component {
             className="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off"
             id="myNavbar"
           >
-            <a href="/" className="w3-bar-item w3-button">
+            <a href="#home" className="w3-bar-item w3-button">
               {/* <Link to={"/"}> */}
               HOME
               {/* </Link> */}
             </a>
-            <a href="/about" className="w3-bar-item w3-button">
+            <a href="#about" className="w3-bar-item w3-button">
               {/* <Link to={"/about"}> */}
               ABOUT
               {/* </Link> */}
             </a>
-            <a href="/menu" className="w3-bar-item w3-button">
+            <a href="#menu" className="w3-bar-item w3-button">
               {/* <Link to={"/menu"}> */}
               MENU
               {/* </Link> */}
             </a>
-            <a href="/contact" className="w3-bar-item w3-button">
+            <a href="#contact" className="w3-bar-item w3-button">
               {/* <Link to={"/contact"}> */}
               CONTACT
               {/* </Link> */}

@@ -13,17 +13,35 @@ class Abouts extends Component {
       "images/bread2.jpg",
       "images/baguettes1.jpg",
       "images/baguettes2.jpg"
-    ]
+    ],
+    clip: "images/clip1.png"
   };
   render() {
     return (
       <React.Fragment>
         <div
-          class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge"
+          className="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge"
           id="about"
         >
-          <div class="w3-content">
-            <div className="card-group">
+          <div className="w3-content">
+            <div className="w3-row">
+              <div className="w3-col s8">
+                <div>
+                  <p>Welcome to Mkate Poa</p>
+                </div>
+                <div>
+                  <p>
+                    True to our name, we offer fresh, quality bread and pastries
+                    and also vegan options
+                  </p>
+                </div>
+                <div>
+                  <p>
+                    We deliver right to your doorstep. We take orders everyday
+                    and deliver.
+                  </p>
+                </div>
+                {/* <div className="card-group">
               {this.state.slideImages.map(slideImage => (
                 <div className="card">
                   <img
@@ -33,17 +51,22 @@ class Abouts extends Component {
                   />
                 </div>
               ))}
-            </div>
-            <div class="w3-row">
-              <div class="w3-col s6">
-                <p>Mon & Tue CLOSED</p>
-                <p>Wednesday 10.00 - 24.00</p>
-                <p>Thursday 10:00 - 24:00</p>
+            </div> */}
+                {/* <div className="w3-row">
+                  <div className="w3-col s6">
+                    <p>Mon & Tue CLOSED</p>
+                    <p>Wednesday 10.00 - 24.00</p>
+                    <p>Thursday 10:00 - 24:00</p>
+                  </div>
+                  <div className="w3-col s6">
+                    <p>Friday 10:00 - 12:00</p>
+                    <p>Saturday 10:00 - 23:00</p>
+                    <p>Sunday Closed</p>
+                  </div>
+                </div> */}
               </div>
-              <div class="w3-col s6">
-                <p>Friday 10:00 - 12:00</p>
-                <p>Saturday 10:00 - 23:00</p>
-                <p>Sunday Closed</p>
+              <div className="w3-col s4">
+                <img src={this.state.clip} alt="cake image" />
               </div>
             </div>
           </div>
