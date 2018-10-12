@@ -26,7 +26,7 @@ class Cakes extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div w3-center w3-border w3-border-dark-grey>
         {this.state.cakes.map(cake => (
           <div
             id="Pizza"
@@ -44,7 +44,7 @@ class Cakes extends Component {
             <hr />
           </div>
         ))}
-      </React.Fragment>
+      </div>
     );
   }
 }

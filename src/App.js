@@ -14,10 +14,11 @@ class App extends Component {
       <div>
         <Navbar />
         <Slideshows />
+        <Abouts />
         <Menus
         // onAddCart={this.state.handleCount}
         />
-        <Abouts />
+
         <Contacts />
         {/* <Router>
           <Switch history={browserHistory}>
