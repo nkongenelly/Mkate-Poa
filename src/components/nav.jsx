@@ -32,9 +32,21 @@ class Navbar extends Component {
             </a>
             <a href="#contact" className="w3-bar-item w3-button">
               {/* <Link to={"/contact"}> */}
-              CONTACT
+              CONTACT US
               {/* </Link> */}
             </a>
+            <a href="#contact" className="w3-bar-item w3-button">
+              {/* <Link to={"/contact"}> */}
+              FAQs
+              {/* </Link> */}
+            </a>
+            <form className="form-inline my-2 my-lg-0">
+              <a href="#contact" className="w3-bar-item w3-button">
+                <i className="fa fa-shopping-cart" aria-hidden="true" />
+                Shopping Cart
+              </a>
+              {/* <span className="badge">({{ Session::has('cart') ? Session::get('cart')->totalQty : '' }})</span> */}
+            </form>
           </div>
 
           {/* <Route exact path="/" component={App} /> */}

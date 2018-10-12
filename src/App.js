@@ -7,6 +7,7 @@ import Slideshows from "./components/slideshows";
 import Abouts from "./components/abouts";
 import Menus from "./components/menus";
 import Contacts from "./components/contacts";
+import Map from "./components/map";
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
             <Route path="/contact" component={Contacts} />
           </Switch>
         </Router> */}
+        <Map />
       </div>
     );
   }

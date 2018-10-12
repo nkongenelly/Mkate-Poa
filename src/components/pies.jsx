@@ -42,9 +42,12 @@ class Pies extends Component {
     return (
       <React.Fragment>
         {this.state.pies.map(pie => (
-          <div id="Pizza" className="w3-container menu w3-padding-32 w3-white">
-            <hr />
-            <h1>
+          <div
+            id="Pizza"
+            className=" menu w3-border-dark-grey w3-yellow w3-grayscale"
+            style={{ marginLeft: 150, marginRight: 300 }}
+          >
+            <h1 style={{ fontSize: 20 }}>
               <b>{pie.name}</b>{" "}
               <span class="w3-right w3-tag w3-dark-grey w3-round">
                 {pie.price}

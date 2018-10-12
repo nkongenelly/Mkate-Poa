@@ -75,7 +75,11 @@ class Slideshows extends Component {
                       <b />
                     </span>
                     <p>
-                      <a href="#menu" className="w3-button w3-xxlarge w3-black">
+                      <a
+                        href="#menu"
+                        className="w3-button w3-xxlarge w3-black"
+                        style={{ position: "absolute" }}
+                      >
                         Let me see the menu
                       </a>
                     </p>

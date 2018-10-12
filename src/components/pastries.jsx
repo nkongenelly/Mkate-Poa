@@ -32,11 +32,10 @@ class Pastries extends Component {
         {this.state.pastries.map(pastry => (
           <div
             id="Pizza"
-            className="w3-container menu w3-padding-32 w3-white"
-            key={pastry.id}
+            className=" menu w3-border-dark-grey w3-yellow w3-grayscale"
+            style={{ marginLeft: 150, marginRight: 300 }}
           >
-            <hr />
-            <h1>
+            <h1 style={{ fontSize: 20 }}>
               <b>{pastry.name}</b>{" "}
               <span class="w3-right w3-tag w3-dark-grey w3-round">
                 {pastry.price}

@@ -26,15 +26,21 @@ class Cakes extends Component {
 
   render() {
     return (
-      <div w3-center w3-border w3-border-dark-grey>
+      // <div
+      //   w3-center
+      //   w3-border
+      //   w3-border-dark-grey
+      //   style={{ marginLeft: 150, marginRight: 300 }}
+      // >
+      <React.Fragment>
         {this.state.cakes.map(cake => (
           <div
             id="Pizza"
             key={cake.id}
-            className="w3-container menu w3-padding-32 w3-white"
+            className=" menu w3-border-dark-grey w3-yellow w3-grayscale"
+            style={{ marginLeft: 150, marginRight: 300 }}
           >
-            <hr />
-            <h1>
+            <h1 style={{ fontSize: 20 }}>
               <b>{cake.name}</b>{" "}
               <span className="w3-right w3-tag w3-dark-grey w3-round">
                 {cake.price}
@@ -44,7 +50,8 @@ class Cakes extends Component {
             <hr />
           </div>
         ))}
-      </div>
+        {/* // </div> */}
+      </React.Fragment>
     );
   }
 }

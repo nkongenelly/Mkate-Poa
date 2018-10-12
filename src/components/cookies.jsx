@@ -27,9 +27,12 @@ class Cookies extends Component {
     return (
       <React.Fragment>
         {this.state.cookies.map(cookie => (
-          <div id="Pizza" className="w3-container menu w3-padding-32 w3-white">
-            <hr />
-            <h1>
+          <div
+            id="Pizza"
+            className=" menu w3-border-dark-grey w3-yellow w3-grayscale"
+            style={{ marginLeft: 150, marginRight: 300 }}
+          >
+            <h1 style={{ fontSize: 20 }}>
               <b>{cookie.name}</b>{" "}
               <span className="w3-right w3-tag w3-dark-grey w3-round">
                 {cookie.price}

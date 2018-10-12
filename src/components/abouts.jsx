@@ -37,6 +37,14 @@ class Abouts extends Component {
                 </div>
                 <div>
                   <p>
+                    <span className="w3-tag">IMPORTANT!</span> We offer
+                    full-service catering for any event, large or small. We
+                    understand your needs and we will cater the food to satisfy
+                    the biggerst criteria of them all, both look and taste.
+                  </p>
+                </div>
+                <div>
+                  <p>
                     We deliver right to your doorstep. We take orders everyday
                     and deliver.
                   </p>
