@@ -8,18 +8,22 @@ import Abouts from "./components/abouts";
 import Menus from "./components/menus";
 import Contacts from "./components/contacts";
 import Map from "./components/map";
+import Footers from "./components/footer";
 
 class App extends Component {
+  state = {
+    counters: []
+  };
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar counters={this.state.counters} />
         <Slideshows />
         <Abouts />
         <Menus
-        // onAddCart={this.state.handleCount}
+          // onAddCart={this.state.handleCount}
+          counters={this.state.counters}
         />
-
         <Contacts />
         {/* <Router>
           <Switch history={browserHistory}>
@@ -30,6 +34,9 @@ class App extends Component {
           </Switch>
         </Router> */}
         <Map />
+        <div style={{bottom:0}}>
+        <Footers />
+        </div>
       </div>
     );
   }

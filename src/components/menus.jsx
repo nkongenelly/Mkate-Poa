@@ -21,7 +21,8 @@ class Menus extends Component {
       boxShadow: "0 4px 16px 0 rgba(0, 0, 0, 0.25)",
       // -webkitBoxShadow: "1px 4px 24px 3px rgba(0, 0, 0, 0.14)",
       // -moz-box-shadow: "0 4px 16px 0 rgba(0, 0, 0, 0.25)",
-      transition: "0.5s all"
+      transition: "0.5s all",
+      height: 260
       // -webkit-transition: "0.5s all",
       // -moz-transition: 0.5s all,
       // -o-transition: 0.5s all,
@@ -32,9 +33,9 @@ class Menus extends Component {
     return (
       <Router>
         <React.Fragment>
-          <div class="about py-5" id="menu">
-            <div class="py-xl-5 py-lg-3" style={{ marginLeft: 120 }}>
-              <h3 class="title text-center text-dark mb-sm-5 mb-4">
+          <div className="about py-5" id="menu">
+            <div className="py-xl-5 py-lg-3" style={{ marginLeft: 120 }}>
+              <h3 className="title text-center text-dark mb-sm-5 mb-4">
                 <span>MKATE POA MENU</span>
               </h3>
 
@@ -48,7 +49,13 @@ class Menus extends Component {
                     <Link to={showmenu.link}>
                       <div
                         className="w3-col s2 tablink w3-padding-small w3-hover-red about-grid"
-                        style={{ color: "#555", padding: 550 }}
+                        style={{
+                          color: "#555",
+                          padding: 550,
+                          height: 260,
+                          verticalAlign: "bottom",
+                          display: "table-cell"
+                        }}
                       >
                         {/* <div className="col-sm-2 about-grid"> */}
                         <div
@@ -108,7 +115,10 @@ class Menus extends Component {
                 </a>
               </div>
             </div> */}
-            <Route path="/cakes" component={Cakes} />
+            <Route
+              path="/cakes"
+              render={props => <Cakes {...props} isAuthed={true} />}
+            />
             <Route path="/bread" component={Breads} />
             <Route path="/cookies" component={Cookies} />
             <Route path="/pies" component={Pies} />

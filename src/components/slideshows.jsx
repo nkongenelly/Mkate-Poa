@@ -42,51 +42,53 @@ class Slideshows extends Component {
       <div>
         <Zoom {...this.state.zoomproperties}>
           {this.state.slideImages.map((slideImage, index) => (
-            <div className="each-slide">
+            <div className="each-slide" id="home">
               <div
                 key={index}
                 style={{
                   backgroundImage: `url(${slideImage})`,
                   backgroundSize: "cover",
-                  height: "800px",
+                  height: "600px",
                   width: "1400px",
                   alignItems: "bottom"
                 }}
               >
-                <span>Slide {index}</span>
+                {/* <span>Slide {index}</span> */}
 
-                <div
+                {/* <div
                   className="bgimg w3-display-container w3-grayscale-min"
                   id="home"
+                > */}
+                <div
+                  className="w3-display-bottomleft w3-padding"
+                  style={{ align: "bottom" }}
                 >
-                  <div className="w3-display-bottomleft w3-padding">
-                    <span className="w3-tag w3-xlarge">
-                      Open from 10am to 12pm
-                    </span>
-                  </div>
-                  <div className="w3-display-middle w3-center">
-                    <span
-                      className="w3-text-white w3-hide-large w3-hide-medium"
-                      style={{ fontSize: "60px" }}
+                  <span className="w3-tag w3-xlarge">
+                    Open from 10am to 10pm
+                  </span>
+                </div>
+                <div className="w3-display-bottomright w3-center">
+                  <span
+                    className="w3-text-white w3-hide-large w3-hide-medium"
+                    style={{ fontSize: "40px" }}
+                  >
+                    <b />
+                    <br />
+                    Mkate Poa
+                    <b />
+                  </span>
+                  <p>
+                    <a
+                      href="#menu"
+                      className="w3-button w3-xxlarge w3-black w3-display-bottom"
                     >
-                      <b />
-                      <br />
-                      Mkate Poa
-                      <b />
-                    </span>
-                    <p>
-                      <a
-                        href="#menu"
-                        className="w3-button w3-xxlarge w3-black"
-                        style={{ position: "absolute" }}
-                      >
-                        Let me see the menu
-                      </a>
-                    </p>
-                  </div>
+                      Our menu
+                    </a>
+                  </p>
                 </div>
               </div>
             </div>
+            // </div>
           ))}
         </Zoom>
       </div>

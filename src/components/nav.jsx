@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import Abouts from "./abouts";
 import Menus from "./menus";
 import Contacts from "./contacts";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Counter from "./counter";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 class Navbar extends Component {
   state = {};
@@ -40,19 +41,24 @@ class Navbar extends Component {
               FAQs
               {/* </Link> */}
             </a>
-            <form className="form-inline my-2 my-lg-0">
-              <a href="#contact" className="w3-bar-item w3-button">
-                <i className="fa fa-shopping-cart" aria-hidden="true" />
-                Shopping Cart
-              </a>
-              {/* <span className="badge">({{ Session::has('cart') ? Session::get('cart')->totalQty : '' }})</span> */}
-            </form>
+            {/* <form className="form-inline my-2 my-lg-0"> */}
+            <a href="#menu" className="w3-bar-item w3-button">
+              {/* <i className="fa fa-shopping-cart" aria-hidden="true" /> */}
+              {/* <Link to={"/cart"}> */}
+              Shopping Cart
+              {/* </Link> */}
+            </a>
+            {/* <span className="badge">({{ Session::has('cart') ? Session::get('cart')->totalQty : '' }})</span> */}
+            {/* </form> */}
           </div>
 
           {/* <Route exact path="/" component={App} /> */}
-          <Route path="/about" component={Abouts} />
-          <Route exact path="/menu" component={Menus} />
-          <Route path="/contact" component={Contacts} />
+          <Switch>
+            <Route path="/about" component={Abouts} />
+            <Route exact path="/menu" component={Menus} />
+            <Route path="/contact" component={Contacts} />
+            <Route path="/cart" component={Menus} />
+          </Switch>
         </div>
       </Router>
     );

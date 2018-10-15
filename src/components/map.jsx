@@ -11,13 +11,13 @@ class Map extends Component {
     },
     zoom: 11
   };
-  renderMarkers(map, maps) {
-    let marker = new maps.Marker({
-      position: "-1.268665592 36.805996776",
-      map,
-      title: "Hello World!"
-    });
-  }
+  // renderMarkers(map, maps) {
+  //   let marker = new maps.Marker({
+  //     position: "-1.268665592 36.805996776",
+  //     map,
+  //     title: "Hello World!"
+  //   });
+  // }
   render() {
     return (
       // Important! Always set the container height explicitly
@@ -26,7 +26,7 @@ class Map extends Component {
           bootstrapURLKeys={{ key: "AIzaSyAaHKeIKU4lQRl_NZKN3jLC4Nv4ChiAmx4" }}
           defaultCenter={this.props.center}
           defaultZoom={this.props.zoom}
-          onGoogleApiLoaded={({ map, maps }) => this.renderMarkers(map, maps)}
+          // onGoogleApiLoaded={({ map, maps }) => this.renderMarkers(map, maps)}
         >
           <AnyReactComponent lat={-1.28333} lng={36.81667} text={"Nairobi"} />
         </GoogleMapReact>
